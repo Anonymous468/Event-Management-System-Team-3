@@ -15,7 +15,6 @@ Firebase APIs for user registration, login and also cloud messaging (notificatio
 Django admin (an auto generated backend that allows you to manage your website in a blink for a lot of simple use cases without having to code much. (basically kind of an admin dashboard))
 
 Frontend:
-HTML (Maybe)
-CSS (Maybe)
-Maybe some JS
-Django
+HTML
+CSS
+JS
