@@ -10,7 +10,7 @@ Contact (contact details (email ids and phone nos) of Infosys customer service a
 
 Backend:
 A web server (and cloud service if needed) to manage the clients and to do some necessary preprocessing.
-A database server (to manage the different events)
+A database server (to manage the different events) (preferred SQLite)
 Firebase APIs for user registration, login and also cloud messaging (notification).
 Django
 
@@ -18,3 +18,14 @@ Frontend:
 HTML
 CSS
 JS
+
+Features to be added:
+
+User authentication and registration: registration, login, email verification and password reset (for both participants and viewers type of users)(for admin all features except registration)
+Appointment Scheduling interface: select hall, day, slot (updated with database) (for participants)
+Hall availability management: view updated available seats and choose from them (preferebly for viewers)
+Booking information management: booking payment and ticket/receipt generation (for viewers preferebly)
+Appointment management: appointment confirmation receipt (for participants preferred)
+Notification system for new booking, appointment reminders, cancel booking (email, sms)
+Admin Dashboard: Edit/delete/add information including user details, event details etc
+
