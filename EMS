@@ -1,0 +1,21 @@
+Website: Event Management System
+
+Webpages:
+Home (Landing page)
+User Login/Register (or this can be implemented as a popup and not a webpage)
+Events (Page where the events are organized in a tabular manner (preferably))
+About Us (Page containing about us info)
+Gallery (Demo images)
+Contact (contact details (email ids and phone nos) of Infosys customer service and all)
+
+Backend:
+A web server (and cloud service if needed) to manage the clients and to do some necessary preprocessing.
+A database server (to manage the different events)
+Firebase APIs for user registration, login and also cloud messaging (notification).
+Django admin (an auto generated backend that allows you to manage your website in a blink for a lot of simple use cases without having to code much. (basically kind of an admin dashboard))
+
+Frontend:
+HTML (Maybe)
+CSS (Maybe)
+Maybe some JS
+Django
