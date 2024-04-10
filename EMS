@@ -10,7 +10,7 @@ Contact (contact details (email ids and phone nos) of Infosys customer service a
 
 Backend:
 A web server (and cloud service if needed) to manage the clients and to do some necessary preprocessing.
-A database server (to manage the different events) (preferred SQLite)
+A database server (to manage the different events) (preferred MySQL/PostgreSQL)
 Firebase APIs for user registration, login and also cloud messaging (notification).
 Django
 
