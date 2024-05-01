@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+body {
+  text-align: center;
+  background-image: url('test.png');
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+}
+</style>
+<title>Login</title>
+</head>
+
+<body>
+<label for="usern"></label>
+<input type="text" id="usern" name="Username" placeholder="Enter username or Email ID" size="40">	<!--username field-->
+<br>
+<br>
+<label for="passw"></label>
+<input type="password" id="passw" name="Password" placeholder="Enter password" size="40" minlength="8">	<!--Password field-->
+<br><br>
+<button type="button" onclick="document.getElementById(usern).value;document.getElementById(passw).value;">Login</button>
+</body>
+</html>
