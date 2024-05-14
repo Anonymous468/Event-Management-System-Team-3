@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home - Event Management</title>
+    <style>
+        body {
+            background-size: 100% 100%;
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        .navbar {
+            background-color: #000;
+            padding: 10px 20px;
+            display: flex; 
+            justify-content: space-between;
+            align-items: center;
+        }
+        .navbar-brand {
+            font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            color: #ffffff;
+            font-size: 24px;
+        }
+        .navbar-links {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+        }
+        .navbar-links li {
+            margin-right: 20px;
+        }
+        .navbar-links li a {
+            color: #fff;
+            text-decoration: none;
+            font-size: 18px;
+        }
+        .login-icon {
+            margin-right: 10px;
+            font-size: 18px;
+            color: #fff;
+        }
+        .main-content {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px;
+            margin: 20px;
+        }
+        .quote {
+            flex:1;
+            font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            font-size: 38px;
+            font-weight: bold;
+            color: #000;
+            margin-right: 20px;
+        }
+        .event-photo {
+            position:relative;
+            width: 50%; 
+            height: 60%; 
+            border-radius: 10px;
+            overflow:hidden;
+        }
+        .event-photo img {
+            width: 800px;
+            height: 540px;
+            object-fit: cover;
+        }
+        .prev, .next {
+            cursor: pointer;
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            background-color: rgba(0, 0, 0, 0.5);
+            color: #fff;
+            padding: 10px;
+            border-radius: 50%;
+            font-size: 18px;
+            user-select: none;
+        }
+        .prev {
+            left: 10px;
+        }
+        .next {
+            right: 10px;
+        }
+    </style>
+</head>
+<body background="https://img.freepik.com/free-vector/bokeh-effect-gradient-background_23-2148381458.jpg?w=996&t=st=1715662499~exp=1715663099~hmac=755ab5869727d9cd173fcd4514e05c85ba5105c915c5fd443726ab2ec5383f93" >
+    <div class="navbar">
+        <div class="navbar-brand"><b>Spectra <br>&ensp;Events </b></div>
+        <ul class="navbar-links">
+            <li><a href="home.html">Home</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+            <li><a href="feedback.html">Feedback</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="login.html">Login <span class="login-icon">&#x1F464;</span></a></li>
+        </ul>
+    </div>
+
+    <div class="main-content">
+        <div class="quote">
+            <p><h1>"Planning an event?<br> Let us make it memorable!"</h1></p>
+        </div>
+        <div class="event-photo">
+            <img src="https://content.jdmagicbox.com/comp/ahmedabad/e5/079pxx79.xx79.121031110024.s1e5/catalogue/marriage-event-management-ellis-bridge-ahmedabad-event-management-companies-o2hy6.jpg" alt="Event Photo" id="eventPhoto">
+            <div class="prev" onclick="prevSlide()">&#10094;</div>
+            <div class="next" onclick="nextSlide()">&#10095;</div>
+        </div>
+    </div>
+
+    <script>
+        var slideIndex = 0;
+        var slides = [         
+            "https://content.jdmagicbox.com/comp/ahmedabad/e5/079pxx79.xx79.121031110024.s1e5/catalogue/marriage-event-management-ellis-bridge-ahmedabad-event-management-companies-o2hy6.jpg",
+            "https://agcdn-1d97e.kxcdn.com/wp-content/uploads/2017/02/alphagamma-top-10-business-conferences-for-entrepreneurs-opportunities-1021x580.jpg",
+            "https://ilead.net.in/wp-content/uploads/2023/03/Art-and-Craft-Exhibition-at-iLEAD_art_and_craft_exhibition5.jpg",
+            "https://5.imimg.com/data5/SELLER/Default/2023/8/338493451/FC/YF/HP/47694279/birthday-decoration-on-terrace.jpg"
+        ];
+        var eventPhoto = document.getElementById('eventPhoto');
+
+        function showSlide() {
+            if (slideIndex < 0) {
+                slideIndex = slides.length - 1;
+            } else if (slideIndex >= slides.length) {
+                slideIndex = 0;
+            }
+            eventPhoto.src = slides[slideIndex];
+        }
+
+        function prevSlide() {
+            slideIndex--;
+            showSlide();
+        }
+
+        function nextSlide() {
+            slideIndex++;
+            showSlide();
+        }
+
+        showSlide();
+    </script>
+</body>
+</html>
