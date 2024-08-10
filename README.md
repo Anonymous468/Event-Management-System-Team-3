@@ -2,4 +2,4 @@
 
 Under supervision of Sandip Sir.
 
-Infosys Springboard Python Internship.
+Infosys Springboard Python Web Dev Internship.
